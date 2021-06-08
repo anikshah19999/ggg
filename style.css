@@ -1,0 +1,169 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+.main-width .container-fluid{
+    max-width: 1450px;
+}
+
+/* main css */
+ul.jon-menu  li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    padding: 0px 12px;
+    transition: .3s;
+}
+ul.jon-menu li:hover >a{
+    color: #e83b3e;
+}
+ul.jon-menu li .color-fix{
+    color: #e83b3e;
+}
+/* dropdown menu */
+ul.jon-menu li{
+    position: relative;
+}
+ul.jon-menu li ul{
+    position: absolute;
+    left:0;
+    top: 220%;
+    width: 220px;
+    background: #fff;
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    opacity: 0;
+    visibility:hidden;
+    transition: all .4s ease-in-out;
+}
+ul.jon-menu li:hover> ul{
+  opacity: 1;
+  visibility:visible;
+  top: 180%;
+}
+ul.jon-menu li ul li {
+    padding: 5px 0px;
+    flex-direction: column;
+}
+ul.jon-menu li ul li a:hover{
+ color: #e83b3e;
+ letter-spacing:2px;
+}
+/* dropdown menu end */
+.header-search {
+    width: 40px;
+    font-size: 20px;
+    border-right: 1px solid #111;
+    margin-left: 25px;
+}
+.header-phone-icon span {
+    font-size: 28px;
+    color: #e83b3e;
+}
+.header-phone-content{
+    width: 170px;
+}
+.header-phone-content span{
+    color: #606060;
+}
+.header-phone-content a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #111;
+    font-size: 17px;
+}
+.btn-btn {
+    background: #e83b3e !important;
+    border-color: #e83b3e !important;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 13px 40px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.btn-btn:hover{
+    color: #fff;
+}
+.btn-btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:0;
+    height: 100%;
+    background: #111;
+    border-radius: 5px;
+    transition: .4s;
+    z-index: -1;
+}
+.btn-btn:hover::after{
+    width: 100%;
+}
+/* slider-section */
+.slider-section{
+    background: url(./img/main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+}
+.slider-content{}
+.slider-content h6{
+    color: #e83b3e;
+}
+.slider-content h1{
+    font-size: 55px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.slider-content p{
+    color: #606060;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.slider-content a{}
+.slider-social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.slider-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.slider-social ul li span{
+    margin-right: 50px;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #111;
+}
+.slider-social ul li span::after {
+    content: "";
+    position: absolute;
+    right: -48px;
+    top: 50%;
+    background: #111;
+    width: 35px;
+    height: 1px;
+}
+.slider-social ul li a:hover{
+    color: #e83b3e;
+}
+.slider-social ul li a {
+    font-size: 20px;
+    color: #111;
+    padding: 0px 8px;
+}
+.slider-content-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* https://anikshah19999.github.io/aone/ */
+/* https://anikshah19999.github.io/bclass/ */
+/* https://anikshah19999.github.io/cclass/ */
